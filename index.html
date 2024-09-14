@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outline, Shadow, Gradient, and Units Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #ffcc33, #ff66cc); 
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem; 
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    }
+
+    .outline-box {
+      margin: 20px 0;
+      padding: 20px;
+      border: 2px solid #333;
+      outline: 5px solid rgba(0, 0, 0, 0.5); 
+      font-size: 1.2rem;
+      line-height: 1.5; 
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    }
+
+    .gradient-button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: #fff;
+      background: linear-gradient(45deg, #ff6347, #ff4500, #ff8c00); 
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); 
+    }
+
+    .gradient-button:hover {
+      background: linear-gradient(45deg, #ff4500, #ff6347, #ff8c00); 
+    }
+
+    .info-box {
+      width: 50%; 
+      height: 200px; 
+      margin: 20px auto;
+      background: linear-gradient(to right, #ff9966, #ff5e62); 
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    }
+
+    p {
+      margin: 20px 0;
+      font-size: 1rem; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>CSS Effects: Outline, Shadow, Gradient & Units</h1>
+    
+    <div class="outline-box">
+      This box has an outline effect with a shadow around it. The outline is a distinct border surrounding the actual border of the box. You can use `outline` in CSS to create emphasis or focus on elements. 
+    </div>
+
+    <button class="gradient-button">Click Me</button>
+
+    <div class="info-box">
+    </div>
+
+    <p>Notice the use of different units here, such as <b>rem</b> for relative font sizing, <b>px</b> for fixed dimensions, and <b>%</b> for responsive layouts. The box above uses a gradient background, and the button uses both gradient and shadow effects.</p>
+  </div>
+
+</body>
+</html>
